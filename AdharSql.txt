@@ -1,0 +1,82 @@
+create table aai(aaid varchar(20),aapwd varchar(20),loc varchar(20);
+/
+create table admin(usid varchar(20),pwd varchar(20));
+/
+create table astaff(sid number,sname varchar(20),loc varchar(20),dor varchar(20),pwd varchar(20));
+/
+create table cregn(appno number,ano number,apwd varchar(20),cname varchar(20),caddr varchar(20),dob varchar(20),fname varchar(20),cno number,occ varchar(20),ph varchar(20),pin number,gend varchar(20),status varchar(20));
+/
+create table license(cid number,dor varchar(20),status varchar(20),lno varchar(20),doi varchar(20),doe varchar(20),iauth varchar(20),rmks varchar(20),vtype number);
+/
+create table passport(cid number,dor varchar(20),status varchar(20),ppno varchar(20),doi varchar(20),doe varchar(20),iauth varchar(20),rmks varchar(20));
+/
+create table pinmast(sid varchar(20),loc varchar(20),inc varchar(20),pwd varchar(20),pinc varchar(20),area varchar(20),stype varchar(20));
+/
+create table schedule(cid number,venue varchar(20),rto varchar(20),tdate varchar(20),ttime varchar(20),status varchar(20),vtype number);
+/
+create table transit(cid number,status varchar(20),dost varchar(20));
+/
+create table travel(cid number,cname varchar(20),ppno varchar(20),status varchar(20),dot varchar(20),loc varchar(20));
+/
+insert into aai values('A1','india','Hyderabad');
+/
+insert into admin values('varun','password');
+/
+insert into astaff values(1000,'anil','Hyderabad','5/4/2017','india');
+//
+insert into cregn values(1,1000,'india','Annu','Hyderabad','21.09.90','S.l.basaiwala',9291557738,'Student','19112009193148.jpg','500036','Female','Accepted');
+/
+insert into cregn values(2,1001,'india','sonu','bhopal','12.12.1987','RD',1234567,'Student','img.jpg','500036','Female','Accepted');
+/
+insert into cregn values(3,1002,'india2','kavya','Hyderabad','17/8/89','venkat',123456777,'Student','perth-city.jpg','500036','Female','Accepted');
+/
+insert into cregn values(4,1003,'tiger','sri','uppal','01/12/1988','murali',1234567778,'Student','0111203.jpg','500085','Male','Accepted');
+/
+insert into cregn values(5,1004,'moon','sri2','uppal1','03/04/1990','rahul',234567778,'cse','20111203.jpg','500089','Male','Accepted');
+/
+insert into cregn values(6,0,'0','rashi','rohtak','21.09.90','S.I. basaiwala',8790982790,'Student','perth-city.jpg','500036','Female','Processing');
+//
+insert into license values(1000,'11/4/2011','Despatched','APHY1001','11/4/2011','11/4/2021','secbad lic','genuine',	2);
+/
+insert into license values(1001,'5/4/2011','Despatched','APHY1002','11/4/2011','11/4/2021','secbad lic1','genuine',	4);
+/
+insert into license values(1002,'12/4/2011','Despatched','APHY100','12/4/2011','12/4/2021','secbad lic','welldone',	4);
+/
+insert into license values(1003,'12/4/2011','Despatched','APHY100','14/4/2011','14/4/2021','secbad lic1','welldone',	2);
+//
+insert into passport values(1000,'5/4/2011','Despatched','APHY100','5/4/2011','5/4/2021','ppo malakpet','genuine');
+/
+insert into passport values(1001,'11/4/2011','Despatched','APHY1001','11/4/2011','11/4/2021','ppo malakpet','genuine');
+/
+insert into passport values(1002,'12/4/2011','Despatched','APHY100','12/4/2011','12/4/2021','ppo malakpet','genuine');
+/
+insert into passport values(1003,'12/4/2011','Processing','0','0','0','0','0');
+/
+insert into passport values(1004,'14/4/2011','Processing','0','0','0','0','0');
+//
+insert into pinmast values('begumpet','secunderabad','alok','india','500085:','b1:','RTA');
+/
+insert into pinmast values('Malakpet','hyderabad','sanjay','india','500036:500046:','M1:M2:','ps');
+/
+insert into pinmast values('Secbad','hyderabad','shonu','india','500036:500046:','s1:s2:','RTA');
+//
+insert into schedule values(1000,'secbad','anil','4/11/2011','10:00','Accept',2);
+/
+insert into schedule values(1001,'secbad','Rakesh','4/11/2011','11:00','Accept',4);
+/
+insert into schedule values(1002,'secabad','anil','4/12/2011','11:00','Accept',4);
+/
+insert into schedule values(1003,'secabad','anu','4/13/2011','12:00','Accept',2);
+//
+insert into transit values(1002,'stop','12/4/2011');
+//
+insert into travel values(1000,'Annu','APHY100','Allowed','5/4/2011','Hyderabad');
+/
+insert into travel values(1000,'Annu','APHY100','Stopped','5/4/2011','Hyderabad');
+/
+insert into travel values(1000,'Annu','APHY100','Allowed','14/4/2011','Hyderabad');
+/
+insert into travel values(1001,'sonu','APHY1001','Allowed','11/4/2011','Hyderabad');
+/
+insert into travel values(1002,'kavya','APHY100','Stopped','12/4/2011','Hyderabad');
+//

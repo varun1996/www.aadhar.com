@@ -1,0 +1,27 @@
+<web-app>
+
+<context-param>
+	<param-name>driver</param-name>
+	<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+
+</context-param>
+
+<context-param>
+	<param-name>url</param-name>
+	<param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+</context-param>
+
+<context-param>
+	<param-name>user</param-name>
+	<param-value>system</param-value>
+</context-param>
+
+
+ 
+ <context-param>
+	<param-name>password</param-name>
+	<param-value>8950653548</param-value>
+</context-param>
+
+
+</web-app>
